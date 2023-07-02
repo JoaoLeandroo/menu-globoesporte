@@ -45,9 +45,10 @@ nav .times img {
 
 .menu .menu-modal {
     cursor: pointer;
-    
     display: flex;
+    align-items: center;
     gap: 0 5px;
+    position: relative;
 }
 
 .menu-modal img {
@@ -98,4 +99,29 @@ input::placeholder {
 }
 .search img {
     width: 28px;
+}
+
+.menu-icon {
+    width: 30px;
+    height: 3px;
+    background-color: var(--primaryWhite);
+    position: relative;
+    bottom: 8px;
+}
+
+.menu-icon::before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: var(--primaryWhite);
+    margin-top: 7px;
+}
+.menu-icon::after {
+    content: '';
+    width: 30px;
+    height: 3px;
+    background-color: var(--primaryWhite);
+    display: block;
+    margin: 5px auto;
 }
